@@ -21,6 +21,7 @@ public class MyUserDetail implements UserDetails{
 
 	public void setUsername(String username) {
 		this.username = username;
+		
 	}
 
 	public void setPassword(String password) {

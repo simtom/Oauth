@@ -7,7 +7,7 @@
    <!-- 调试模式 -->
    <!--   <security:debug/> -->
   
-    <!-- oauth2.0 第三方信息查询 -->
+    <!-- oauth2.0 第三方信息查询 --> 
     <!-- oauth client的配置，类似于spring security的用户查询，
                clientDetailsService是一个接口（里面只有一个loadClientByClientId方法获取ClientDetails）
                                   clientDetailsUserDetailsService是实体查询类 -->
