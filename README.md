@@ -4,7 +4,7 @@
    
      
      Oauth协议的授权流程
-![Alt text](./新建 RTF 文档53.png)
+![Alt text](./img/新建 RTF 文档53.png)
 
 
 
