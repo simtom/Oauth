@@ -18,6 +18,8 @@ public class MyUserDetail implements UserDetails{
 	
 	private String username;
 	private String password;
+	
+	
 
 	public void setUsername(String username) {
 		this.username = username;
