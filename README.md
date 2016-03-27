@@ -1,4 +1,4 @@
-                      使用 python 测试，引入requests包
+﻿                      使用 python 测试，引入requests包
 
 
    
@@ -10,17 +10,17 @@
 
        1. 配置文件配置了需要保护的资源
 
-![Alt text](./新建 RTF 文档75.png)
+![Alt text](./img/新建 RTF 文档75.png)
 
 
-      2. 尝试去访问受保护的资源
+      2. 尝试去访问受保护的资源  
 
-![Alt text](./新建 RTF 文档94.png)
+![Alt text](./img/新建 RTF 文档94.png)
 
 
 
 Response为
-![Alt text](./新建 RTF 文档108.png)
+![Alt text](./img/新建 RTF 文档108.png)
 
 
 
@@ -34,7 +34,7 @@ Response为
 客户端模式（client credentials）
 
     4. 采用第三种客户端授权模式测试
-![Alt text](./新建 RTF 文档282.png)
+![Alt text](./img/新建 RTF 文档282.png)
 
 
 
@@ -43,35 +43,35 @@ Response为
 
 
 Respond成功返回了token及相关信息
-![Alt text](./新建 RTF 文档309.png)
+![Alt text](./img/新建 RTF 文档309.png)
 
 
       5. 如果提供的凭证信息有误（更改client_secret）
 
-![Alt text](./新建 RTF 文档345.png)
+![Alt text](./img/新建 RTF 文档345.png)
 
 
    Respond返回
-![Alt text](./新建 RTF 文档362.png)
+![Alt text](./img/新建 RTF 文档362.png)
 
 
 Token相关信息的获取测试通过
 
     6. 使用token访问受保护的资源
- ![Alt text](./新建 RTF 文档402.png)
+ ![Alt text](./img/新建 RTF 文档402.png)
 
  Respond返回
-![Alt text](./新建 RTF 文档418.png)
+![Alt text](./img/新建 RTF 文档418.png)
 
 携带正确的token信息访问受保护的资源测试通过
 
       7. 携带错误的token信息测试
 
-![Alt text](./新建 RTF 文档464.png)
+![Alt text](./img/新建 RTF 文档464.png)
 
 Respond返回
 
-![Alt text](./新建 RTF 文档482.png)
+![Alt text](./img/新建 RTF 文档482.png)
 
 
 携带错误的token信息无法访问资源

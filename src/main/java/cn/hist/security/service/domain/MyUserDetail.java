@@ -69,6 +69,8 @@ public class MyUserDetail implements UserDetails{
 		return true;
 	}
 
+	
+	
 
 	public boolean isCredentialsNonExpired() {
 		// TODO Auto-generated method stub
