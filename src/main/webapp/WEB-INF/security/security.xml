@@ -114,7 +114,17 @@
 	
 	
 	
+<!-- 	 <security:http disable-url-rewriting="true" use-expressions="false"
+          authentication-manager-ref="authenticationManager">
+        <security:intercept-url pattern="/oauth/**" access="ROLE_ABCS,ROLE_UNITY,ROLE_MOBILE"/>
+        <security:intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
 
-	
+        <security:form-login authentication-failure-url="/login.jsp?authentication_error=1"
+                    login-page="/login.jsp" login-processing-url="/login.do"/>
+        <security:logout logout-success-url="/index.jsp" logout-url="/logout.do"/>
+        <security:access-denied-handler error-page="/login.jsp?authorization_error=2"/>
+        <security:anonymous/>
+        <security:csrf disabled="true"/>
+    </security:http> -->
 
 </beans>

@@ -15,7 +15,7 @@ public class MyUserDetailService implements UserDetailsService{
 		// TODO Auto-generated method stub
 		
 		
-		MyUserDetail detail = new MyUserDetail(arg0,"123456");
+		MyUserDetail detail = new MyUserDetail("123456","123456");
 		
 		System.out.println(arg0);
 
