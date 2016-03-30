@@ -19,7 +19,7 @@ import cn.hist.sunshine.service.imp.TeacherServiceImp;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "WEB-INF/security/*.xml,WEB-INF/spring/*.xml,WEB-INF/spring-mvc/*.xml")
 @Controller
-@RequestMapping(value="abcs")
+@RequestMapping(value="oauth")
 public class TestController {
 	@Autowired
 	private TeacherServiceImp teacherService;
@@ -30,7 +30,6 @@ public class TestController {
 		map.put("test", "hello world!");
 		Teacher teacher = new Teacher();
 		teacher.setName("wang");
-		teacher.setNumber("123456");
 		teacher.setSex("f");
 		teacher.setTel("010");
 	    teacherService.saveTeacher(teacher);
