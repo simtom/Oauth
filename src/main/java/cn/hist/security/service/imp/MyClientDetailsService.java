@@ -20,8 +20,13 @@ public class MyClientDetailsService extends HibernateTemplate implements ClientD
 		
 		Criteria criteria = this.getSessionFactory().openSession()
 				.createCriteria(ClientDetails.class);
+		
 		@SuppressWarnings("unchecked")
 		List<ClientDetails> list = criteria.add(Restrictions.eq("clientId", clientId)).list();
+		
+		
+		
+		
 		if (list!=null&&list.size()!=0) {
 			return (ClientDetails) list.get(0);
 		}else {
