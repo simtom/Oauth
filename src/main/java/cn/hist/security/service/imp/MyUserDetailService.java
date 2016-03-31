@@ -1,6 +1,10 @@
 package cn.hist.security.service.imp;
 
+import java.util.List;
+
+import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate4.HibernateTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,37 +15,28 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cn.hist.security.service.domain.MyUserDetail;
 
-
 @Service
 @Transactional
-public class MyUserDetailService extends HibernateTemplate implements UserDetailsService{
-	
+public class MyUserDetailService extends HibernateTemplate implements UserDetailsService {
 
-	
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		
-	
-		System.out.println(username);
-	
-		UserDetails userDetails = this.get(UserDetails.class,1);
-		
-		System.out.println(userDetails);
-		
-		
-		System.out.println("**************");
-		
-		
-		 return new MyUserDetail("123456", "123456");
-	 
-		
+
+		Criteria criteria = this.getSessionFactory().openSession()
+				.createCriteria(MyUserDetail.class);
+		@SuppressWarnings("unchecked")
+		List<MyUserDetail> list = criteria.add(Restrictions.eq("username", username)).list();
+		if (list != null && list.size() != 0) {
+			return (MyUserDetail) list.get(0);
+		} else {
+			return null;
+		}
 
 	}
-	
-	
-	   @Autowired
-		private void setProSessionFactory(SessionFactory sessionFactory) {
-			
-			super.setSessionFactory(sessionFactory);
-		}
+    @Autowired
+	private void setFatherSessionFactory(SessionFactory sessionFactory) {
+		
+		super.setSessionFactory(sessionFactory);
+		
+	}
 
 }

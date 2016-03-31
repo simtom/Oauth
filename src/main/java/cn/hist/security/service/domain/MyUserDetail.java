@@ -23,13 +23,18 @@ public class MyUserDetail implements UserDetails{
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue
-	private String id;
+	private int id;
 	
-	public String getId() {
+	
+	public MyUserDetail() {
+		
+	}
+
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
