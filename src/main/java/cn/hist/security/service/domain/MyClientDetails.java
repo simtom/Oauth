@@ -80,6 +80,8 @@ public class MyClientDetails implements ClientDetails{
 	public Set<String> getAuthorizedGrantTypes() {
 		Set<String> set = new HashSet<String>();
 		set.add("password");
+		set.add("token");
+		set.add("implicit");
 		return set;
 	}
 

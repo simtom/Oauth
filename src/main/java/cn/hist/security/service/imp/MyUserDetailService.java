@@ -23,13 +23,15 @@ public class MyUserDetailService extends HibernateTemplate implements UserDetail
 	
 		System.out.println(username);
 	
+		UserDetails userDetails = this.get(UserDetails.class,1);
 		
+		System.out.println(userDetails);
 		
 		
 		System.out.println("**************");
 		
 		
-		 return new MyUserDetail("test", "test");
+		 return new MyUserDetail("123456", "123456");
 	 
 		
 
