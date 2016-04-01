@@ -105,7 +105,7 @@ import requests
 </br>
 token={"access_token":"22e73c1a-876e-42fe-9549-16096eceb0ec"}
 </br>
-r = requests.put("http://127.0.0.1:8080/Oauth/teacher/getAll",params=token)
+r = requests.get("http://127.0.0.1:8080/Oauth/teacher/getAll",params=token)
 </br>
 print(r.text)
 </code>

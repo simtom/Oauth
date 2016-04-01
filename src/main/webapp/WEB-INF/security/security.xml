@@ -105,7 +105,7 @@
 		entry-point-ref="clinetAuthenticationEntryPoint"
 		access-decision-manager-ref="accessDecisionManager">
 		<security:anonymous enabled="false" />
-		<security:intercept-url pattern="/abcs/**"
+		<security:intercept-url pattern="/teacher/**"
 			access="ROLE_ABCS" />
 		<security:custom-filter ref="mobileResourceServer"
 			before="PRE_AUTH_FILTER" />
