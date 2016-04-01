@@ -86,8 +86,11 @@
 <p>使用python测试，请求token
 
 <code>import requests
+</br>
 data={"client_id":"test","client_secret":"test","username":"test","password":"test","grant_type":"password","scope":"read"}
+</br>
 r = requests.post("http://127.0.0.1:8080/Oauth/oauth/token",params=data)
+</br>
 print(r.text)
 </code>
 <p>返回的token相关信息
@@ -99,8 +102,11 @@ print(r.text)
 <p>使用获取到的token，访问受保护的资源
 <code>
 import requests
+</br>
 token={"access_token":"22e73c1a-876e-42fe-9549-16096eceb0ec"}
+</br>
 r = requests.put("http://127.0.0.1:8080/Oauth/teacher/getAll",params=token)
+</br>
 print(r.text)
 </code>
 <p>服务端的响应
