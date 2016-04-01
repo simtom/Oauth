@@ -101,7 +101,7 @@
 	
 	
 	<!-- 保护资源 -->
-	<security:http pattern="/abcs/**" create-session="never"
+	<security:http pattern="/teacher/**" create-session="never"
 		entry-point-ref="clinetAuthenticationEntryPoint"
 		access-decision-manager-ref="accessDecisionManager">
 		<security:anonymous enabled="false" />
