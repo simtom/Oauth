@@ -13,14 +13,12 @@ import com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin;
 @Configuration
 @EnableSwagger
 public class SwaggerConfig {
-
+	
+    @Autowired
     private SpringSwaggerConfig springSwaggerConfig;
 
-    @Autowired
-    public void setSpringSwaggerConfig(SpringSwaggerConfig springSwaggerConfig)
-    {
-        this.springSwaggerConfig = springSwaggerConfig;
-    }
+
+   
 
     @Bean
     public SwaggerSpringMvcPlugin customImplementation()

@@ -19,8 +19,9 @@
   <context:component-scan base-package="cn.hist.sunshine.dao.imp"/>
   <context:component-scan base-package="cn.hist.security.service.imp"/>
  
+ 
+ 
   
-
   <!-- JPA 相关 -->
   <context:property-placeholder location="classpath:db.properties"/>
   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">  

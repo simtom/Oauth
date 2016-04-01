@@ -14,11 +14,29 @@
      <mvc:annotation-driven/> 
 
      <context:component-scan base-package="cn.hist.sunshine.controller"/>
-
+     
+     <!-- <context:component-scan base-package="cn.hist.swagger"/>  -->
+     
 	 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
           <property name="prefix" value="/WEB-INF/jsp/"></property>
           <property name="suffix" value=".jsp"></property>
      </bean> 
+     
+       <!-- swagger dep -->
+
+    <!--  <bean  class="com.mangofactory.swagger.configuration.SpringSwaggerConfig" /> -->
+  
+  
+     
+     
+     
+      <mvc:resources mapping="/images/**" location="/images/" cache-period="31536000"/>
+      <mvc:resources mapping="/css/**" location="/css/" cache-period="31536000"/>
+      <mvc:resources mapping="/js/**" location="/js/" cache-period="31536000"/>
+      <mvc:resources mapping="/src/**" location="/src/" cache-period="31536000"/>
+      <mvc:resources mapping="/fonts/**" location="/fonts/" cache-period="31536000"/>
+      <mvc:resources mapping="/table/**" location="/table/" cache-period="31536000"/>
+      <mvc:resources mapping="/swagger/**" location="/WEB-INF/swagger/" />
 
 </beans>
 

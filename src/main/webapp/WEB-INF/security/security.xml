@@ -125,6 +125,6 @@
         <security:access-denied-handler error-page="/login.jsp?authorization_error=2"/>
         <security:anonymous/>
        
-    </security:http> 
+    </security:http>  
 
 </beans>
