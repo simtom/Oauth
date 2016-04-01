@@ -100,7 +100,7 @@ print(r.text)
 <code>
 import requests
 token={"access_token":"22e73c1a-876e-42fe-9549-16096eceb0ec"}
-r = requests.put("http://127.0.0.1:8080/Oauth/abcs/hello",params=token)
+r = requests.put("http://127.0.0.1:8080/Oauth/teacher/getAll",params=token)
 print(r.text)
 </code>
 <p>服务端的响应
