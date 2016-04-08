@@ -28,7 +28,7 @@ public class MyClientDetails implements ClientDetails{
 	private String id;
 	private String clientId;
 	private String clientSecret;
-
+    ////
 	
 	public void setClientId(String clientId) {
 		this.clientId = clientId;
