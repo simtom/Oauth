@@ -22,7 +22,7 @@ public class MyClientDetails implements ClientDetails{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+	//@
 	@Id
 	@GeneratedValue
 	private String id;
