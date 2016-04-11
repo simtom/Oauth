@@ -61,7 +61,7 @@ public class ControllerTest {
     }  
     @Test  
     public void getAccount() throws Exception {  
-        mockMvc.perform((get("/oauth/")))  
+        mockMvc.perform((get("/teacher/getAll")))  
                 .andExpect(status().isOk()).andDo(print());  
     }
 
